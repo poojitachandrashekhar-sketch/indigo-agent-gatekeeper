@@ -1,0 +1,45 @@
+
+# AI Prompts Documentation
+## Project: IndiGo Agent Gatekeeper
+
+### AI Development Tool
+Google Antigravity
+
+### Prompt 1: Project Development
+I am working on an MBA assignment on AI Agent Governance and Security. Build a prototype called IndiGo Agent Gatekeeper for IndiGo Airlines. The application should simulate a security layer that evaluates AI agent requests before they can perform actions.
+
+### Prompt 2: Governance Rules
+Implement three possible decisions:
+- ALLOW: Permit authorized requests that follow governance rules.
+- ASK CUSTOMER: Require explicit customer confirmation for sensitive actions.
+- BLOCK: Reject unauthorized, revoked, or high-risk requests.
+
+Include rules for agent registration, booking confirmation, transaction limits, and revoked agents.
+
+### Prompt 3: Application Interface
+Create a user-friendly Streamlit dashboard with:
+- Request Simulator
+- Agent Management
+- Audit Log & History
+- Security Test Suite
+- Governance Rules & Guide
+
+The dashboard should be easy to use and suitable for demonstrating an academic project.
+
+### Prompt 4: Agent Management
+Implement functionality to register AI agents, view their status, and revoke their permissions. Maintain records of registered and revoked agents.
+
+### Prompt 5: Audit Logging
+Record agent requests, actions, decisions, reasons, and timestamps in an audit log. Provide an option to download the audit log.
+
+### Prompt 6: Testing
+Create automated tests for the Gatekeeper security rules, covering authorized requests, customer confirmation, unknown agents, revoked agents, and transaction limits.
+
+### Prompt 7: Documentation
+Create a README file explaining the project, its purpose, setup instructions, governance rules, and how to run the application.
+
+---
+
+## Student Verification
+
+The prototype was generated with AI assistance using Google Antigravity. I tested the application, verified the security decisions, registered and revoked an agent, reviewed the audit log, and ran the security test suite.
