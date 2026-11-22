@@ -259,3 +259,23 @@ The gatekeeper enforces complete traceability:
 
 ## ⚖️ Academic Disclaimer
 > **IMPORTANT NOTICE:** This project is an academic simulation created solely for the purpose of completing an MBA assignment on AI Agent Governance and Security. It is **not** an official application of InterGlobe Aviation Limited (IndiGo Airlines), is **not** connected to live production booking systems, and does **not** process real passenger data or financial transactions.
+## Governance Decisions
+
+The Agent Gatekeeper uses three security decisions:
+
+- ALLOW: Permits authorized requests that follow governance policies.
+- ASK CUSTOMER: Requires explicit customer confirmation for sensitive actions.
+- BLOCK: Rejects unauthorized, revoked, or high-risk requests.
+
+## Security Policies
+
+1. Unknown agents cannot access airline services.
+2. Registered agents can perform permitted activities.
+3. Flight bookings require customer confirmation.
+4. Transactions exceeding ₹10,000 are blocked.
+5. Revoked agents cannot perform any actions.
+6. All security decisions are recorded in the audit log.
+
+## Testing
+
+The prototype was tested using authorized requests, unauthorized agents, revoked agents, missing customer confirmation, and transactions exceeding the permitted limit.
