@@ -154,7 +154,7 @@ class TestIndiGoAgentGatekeeper(unittest.TestCase):
         self.assertEqual(decision, DECISION_ASK_CUSTOMER)
         self.assertEqual(rule_code, "RULE_7_REFUND_REQUIRES_CONFIRMATION")
         self.assertIn("Rule 7", reason)
-
+  
     def test_rule_7_refund_request_with_confirmation_allowed(self):
         """Rule 7: Refund requests with verified customer confirmation are allowed."""
         decision, reason, rule_code = evaluate_security_rule(
