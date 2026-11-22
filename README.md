@@ -279,3 +279,19 @@ The Agent Gatekeeper uses three security decisions:
 ## Testing
 
 The prototype was tested using authorized requests, unauthorized agents, revoked agents, missing customer confirmation, and transactions exceeding the permitted limit.
+## Installation and Setup
+
+1. Install Python 3.10 or newer.
+2. Clone or download this repository.
+3. Open a terminal inside the project folder.
+4. Install the required packages:
+
+   pip install -r requirements.txt
+
+5. Start the application:
+
+   streamlit run app.py
+
+## Usage
+
+Open the application in your browser and use the Request Simulator to evaluate AI agent requests. Explore Agent Management, Audit Log, Security Test Suite, and Governance Rules to understand the security controls.
