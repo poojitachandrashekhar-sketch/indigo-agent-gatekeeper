@@ -236,3 +236,16 @@ if __name__ == "__main__":
         unittest.main(argv=[sys.argv[0]])
     else:
         sys.exit(main())
+    def test_rule_8_revoked_agent_booking_blocked_even_with_confirmation(self):
+        """Rule 8: Revoked agents cannot book flights even with customer confirmation."""
+
+        decision, reason, rule_code = evaluate_security_rule(
+            agent_status=STATUS_REVOKED,
+            action=ACTION_BOOK_FLIGHT,
+            amount_inr=5000.0,
+            customer_confirmation="Yes"
+        )
+
+        self.assertEqual(decision, DECISION_BLOCK)
+        self.assertEqual(rule_code, "RULE_8_REVOKED_AGENT")
+        self.assertIn("Rule 8", reason)
